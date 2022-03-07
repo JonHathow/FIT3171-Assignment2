@@ -2,9 +2,9 @@
 Databases Week 2 Tutorial
 week2_student.sql
 
-student id:
-student name:
-last modified date:
+student id: 31189733
+student name: How Yu Chern
+last modified date: 7/3/2022
 
 */
 
