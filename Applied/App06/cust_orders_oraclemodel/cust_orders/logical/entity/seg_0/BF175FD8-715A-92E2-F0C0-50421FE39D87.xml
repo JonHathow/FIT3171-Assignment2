@@ -1,0 +1,104 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="BF175FD8-715A-92E2-F0C0-50421FE39D87" name="CUSTOMER">
+<createdBy>user</createdBy>
+<createdTime>2022-04-04 01:23:40 UTC</createdTime>
+<ownerDesignName>cust_orders</ownerDesignName>
+<engineerTo>
+<item key="339D0F20-55D9-F3F4-3469-2E04B88F1755" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cust_no" id="74E32BC0-175A-AB5B-6A79-D97A9251C21E">
+<createdBy>user</createdBy>
+<createdTime>2022-04-04 01:23:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[Customer number as unique id to identify each customer]]></commentInRDBMS>
+<ownerDesignName>cust_orders</ownerDesignName>
+<engineerTo>
+<item key="339D0F20-55D9-F3F4-3469-2E04B88F1755" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cust_name" id="20AF3902-E7FF-E9D4-4BA8-8D5DA619EB59">
+<createdBy>user</createdBy>
+<createdTime>2022-04-04 01:25:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[customer name]]></commentInRDBMS>
+<ownerDesignName>cust_orders</ownerDesignName>
+<engineerTo>
+<item key="339D0F20-55D9-F3F4-3469-2E04B88F1755" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cust_address" id="9C7F019F-943F-FFE7-5E6B-0776E539E719">
+<createdBy>user</createdBy>
+<createdTime>2022-04-04 01:26:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[Customer address]]></commentInRDBMS>
+<ownerDesignName>cust_orders</ownerDesignName>
+<engineerTo>
+<item key="339D0F20-55D9-F3F4-3469-2E04B88F1755" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cust_phone" id="EE632F02-13C9-3A0A-7677-2C4A8706DDE8">
+<createdBy>user</createdBy>
+<createdTime>2022-04-04 01:26:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Customer phone number]]></commentInRDBMS>
+<ownerDesignName>cust_orders</ownerDesignName>
+<engineerTo>
+<item key="339D0F20-55D9-F3F4-3469-2E04B88F1755" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cust_level" id="2A215699-BDC8-F791-69E3-DCA2C41068DF">
+<createdBy>user</createdBy>
+<createdTime>2022-04-04 01:27:19 UTC</createdTime>
+<commentInRDBMS><![CDATA[Customer level: G - Gold, B - Bronze, S - Silver]]></commentInRDBMS>
+<ownerDesignName>cust_orders</ownerDesignName>
+<engineerTo>
+<item key="339D0F20-55D9-F3F4-3469-2E04B88F1755" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="038FE9E6-00C9-3E82-A530-CFC806C5DEFE" name="CUSTOMER PK">
+<createdBy>user</createdBy>
+<createdTime>2022-04-04 01:25:13 UTC</createdTime>
+<ownerDesignName>cust_orders</ownerDesignName>
+<engineerTo>
+<item key="339D0F20-55D9-F3F4-3469-2E04B88F1755" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>74E32BC0-175A-AB5B-6A79-D97A9251C21E</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
