@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="23C55B3C-0F20-CAD7-B46E-E8F58A98B1C2" name="CUSTOMER">
+<createdBy>user</createdBy>
+<createdTime>2022-04-04 02:23:10 UTC</createdTime>
+<generatorID>BF175FD8-715A-92E2-F0C0-50421FE39D87</generatorID>
+<ownerDesignName>cust_orders</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cust_no" id="23F8D1DA-8E9F-2197-E7DC-1ED4E1B9C3E1">
+<createdBy>user</createdBy>
+<createdTime>2022-04-04 02:23:11 UTC</createdTime>
+<commentInRDBMS><![CDATA[Customer number as unique id to identify each customer]]></commentInRDBMS>
+<generatorID>74E32BC0-175A-AB5B-6A79-D97A9251C21E</generatorID>
+<ownerDesignName>cust_orders</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cust_name" id="9DBABE7C-0966-28D0-514A-A1B22A346A95">
+<createdBy>user</createdBy>
+<createdTime>2022-04-04 02:23:11 UTC</createdTime>
+<commentInRDBMS><![CDATA[customer name]]></commentInRDBMS>
+<generatorID>20AF3902-E7FF-E9D4-4BA8-8D5DA619EB59</generatorID>
+<ownerDesignName>cust_orders</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cust_address" id="7A1C7821-17E7-F53A-FE8C-17A187599596">
+<createdBy>user</createdBy>
+<createdTime>2022-04-04 02:23:11 UTC</createdTime>
+<commentInRDBMS><![CDATA[Customer address]]></commentInRDBMS>
+<generatorID>9C7F019F-943F-FFE7-5E6B-0776E539E719</generatorID>
+<ownerDesignName>cust_orders</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cust_phone" id="4992028D-040C-4A1F-863A-6628CF84B25C">
+<createdBy>user</createdBy>
+<createdTime>2022-04-04 02:23:11 UTC</createdTime>
+<commentInRDBMS><![CDATA[Customer phone number]]></commentInRDBMS>
+<generatorID>EE632F02-13C9-3A0A-7677-2C4A8706DDE8</generatorID>
+<ownerDesignName>cust_orders</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cust_level" id="51D21101-A1DD-8500-924D-605624605C7D">
+<createdBy>user</createdBy>
+<createdTime>2022-04-04 02:23:11 UTC</createdTime>
+<commentInRDBMS><![CDATA[Customer level: G - Gold, B - Bronze, S - Silver]]></commentInRDBMS>
+<generatorID>2A215699-BDC8-F791-69E3-DCA2C41068DF</generatorID>
+<ownerDesignName>cust_orders</ownerDesignName>
+<constraintName>chk_level</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<listOfValues>
+<valueDef value="B" description="Bronze"/>
+<valueDef value="G" description="Gold"/>
+<valueDef value="S" description="Silver"/>
+</listOfValues>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="45ED765A-8BE7-6C3F-4AF4-CBEF7B7C3F49" name="CUSTOMER_PK">
+<createdBy>user</createdBy>
+<createdTime>2022-04-04 02:23:11 UTC</createdTime>
+<generatorID>038FE9E6-00C9-3E82-A530-CFC806C5DEFE</generatorID>
+<ownerDesignName>cust_orders</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="23F8D1DA-8E9F-2197-E7DC-1ED4E1B9C3E1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
