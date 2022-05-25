@@ -48,8 +48,7 @@ COMMENT ON COLUMN competitor.comp_lname IS
     'Competitor’s last name';
     
 COMMENT ON COLUMN competitor.comp_gender IS
-    'Competitor’s gender (M for male, F for female, or U for
-Undisclosed)';
+    'Competitor’s gender (M for male, F for female, or U for Undisclosed)';
 
 COMMENT ON COLUMN competitor.comp_dob IS
     'Competitor’s date of birth';
@@ -58,15 +57,13 @@ COMMENT ON COLUMN competitor.comp_email IS
     'Competitor’s email';
     
 COMMENT ON COLUMN competitor.comp_unistatus IS
-    'Competitor’s university student/staff status (Y for Yes or
-N for No)';
+    'Competitor’s university student/staff status (Y for Yes or N for No)';
 
 COMMENT ON COLUMN competitor.comp_phone IS
     'Competitor’s phone number';
     
-COMMENT ON COLUMN competitor.comp_phone IS
-    'Emergency contact relationship to competitor (P for
-Parent, G for Guardian, T for Partner, or F for Friend)';    
+COMMENT ON COLUMN competitor.ec_relationship IS
+    'Emergency contact relationship to competitor (P for Parent, G for Guardian, T for Partner, or F for Friend)';    
 
 COMMENT ON COLUMN competitor.ec_phone IS
     'Emergency contact’s phone number (unique identifier) as foreign key';    
@@ -190,4 +187,6 @@ CONSTRAINT carn_date_fk_team FOREIGN KEY(carn_date) REFERENCES carnival(carn_dat
 ALTER TABLE team ADD CONSTRAINT team_uq UNIQUE ( team_name, carn_date );
 
 SET ECHO OFF
+
+COMMIT;
 
