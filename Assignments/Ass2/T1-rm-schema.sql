@@ -18,15 +18,6 @@
 -- are included. FK constraints are to be added at the end of this script
 
 -- COMPETITOR
-CREATE TABLE EMERCONTACT
-(
-ec_phone CHAR(10) NOT NULL,
-ec_fname VARCHAR(30) NOT NULL,
-ec_lname VARCHAR(30) NOT NULL,
-CONSTRAINT pk_emercontact PRIMARY KEY(ec_phone)
-);
-
--- EMERCONTACT
 CREATE TABLE COMPETITOR
 (
 comp_no NUMERIC(5) NOT NULL,
@@ -43,6 +34,24 @@ CONSTRAINT comp_unistatus CHECK(comp_unistatus IN ('Y', 'N')),
 CONSTRAINT comp_ec_relationship CHECK(comp_ec_relationship IN ('P', 'G', 'T', 'F')),
 CONSTRAINT pk_competitor PRIMARY KEY(comp_no)
 );
+
+-- EMERCONTACT
+CREATE TABLE emercontact
+(
+ec_phone CHAR(10) NOT NULL,
+ec_fname VARCHAR(30) NOT NULL,
+ec_lname VARCHAR(30) NOT NULL,
+CONSTRAINT pk_emercontact PRIMARY KEY(ec_phone)
+);
+
+COMMENT ON COLUMN emercontact.ec_phone IS
+    'Emergency contact’s phone number (unique identifier)';
+
+COMMENT ON COLUMN emercontact.ec_fname IS
+    'Emergency contact’s first name';
+
+COMMENT ON COLUMN emercontact.ec_lname IS
+    'Emergency contact’s last name';
 
 --ENTRY
 CREATE TABLE ENTRY
