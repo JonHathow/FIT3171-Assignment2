@@ -18,7 +18,6 @@ Do not remove this notice.
 */
 
 
-
 DROP TABLE carnival CASCADE CONSTRAINTS;
 
 DROP TABLE charity CASCADE CONSTRAINTS;
