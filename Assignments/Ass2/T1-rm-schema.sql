@@ -62,7 +62,7 @@ COMMENT ON COLUMN competitor.comp_unistatus IS
 COMMENT ON COLUMN competitor.comp_phone IS
     'Competitor’s phone number';
     
-COMMENT ON COLUMN competitor.ec_relationship IS
+COMMENT ON COLUMN competitor.comp_ec_relationship IS
     'Emergency contact relationship to competitor (P for Parent, G for Guardian, T for Partner, or F for Friend)';    
 
 COMMENT ON COLUMN competitor.ec_phone IS
